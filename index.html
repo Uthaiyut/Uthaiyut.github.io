@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style-home.css" href="style.css">
+    <title>MathGraph - หน้าหลัก</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <li><a href="index.html">หน้าหลัก</li></a>
-        <li><a href="about.html">ผู้จัดทำ  </li></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MathGraph</a>
+            <div class="ms-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ผู้จัดทำ</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="box">
-    <h1>โครงงานคณิตศาสตร์</h1>
-    <br>
-    <p>
-        การพัฒนาเว็บแอปพลิเคชันเพื่อส่งเสริมความเข้าใจเรื่องฟังก์ชันและกราฟผ่านการแสดงผลทางภาพและแบบจำลองเชิงโต้ตอบ
-    </p>
-    <br>
-    <button class="play-button" onclick="playgrapt()">
-         กราฟพาราโบลา
-    </button>
+    
+    <div class="hero-wrapper">
+        <div class="main-card animate__animated animate__fadeIn">
+            <h1 class="display-4 fw-bold mb-3">โครงงานคณิตศาสตร์</h1>
+            <p class="lead text-muted mb-5">
+                การพัฒนาเว็บแอปพลิเคชันเพื่อส่งเสริมความเข้าใจเรื่องฟังก์ชันและกราฟ<br>
+                ผ่านการแสดงผลทางภาพและแบบจำลองเชิงโต้ตอบ
+            </p>
+            <button class="btn btn-main" onclick="location.href='page.html'">
+                เริ่มสำรวจกราฟพาราโบลา
+            </button>
+        </div>
     </div>
-
-    <script>
-        function playgrapt() {
-            window.location.href = "page.html"; 
-        }
-    </script>
 </body>
 </html>
