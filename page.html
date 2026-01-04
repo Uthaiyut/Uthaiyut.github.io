@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>กราฟฟังก์ชัน Quadratic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="back" href="index.html" onclick="location.href='index.html'">
+      <p>ย้อนกลับ</p>
+    </div>
+
+  <h1>กราฟฟังก์ชัน y = ax² + bx + c</h1>
+  <p style="margin-top:-10px;">เลื่อนสไลด์เพื่อเปลี่ยนค่าสัมประสิทธิ์ หรือใช้ปุ่ม + / - เพื่อซูม</p>
+
+  <div id="container">
+
+    <div class="canvas-wrapper">
+      <canvas id="graph" width="500" height="500"></canvas>
+
+      <div class="zoom-btns">
+        <button id="zoomIn">+</button>
+        <button id="zoomOut">−</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>ปรับค่าสัมประสิทธิ์</h2>
+
+      <p class="eq">
+        y =
+        <span id="aVal">1</span>x² +
+        <span id="bVal">0</span>x +
+        <span id="cVal">0</span>
+      </p>
+
+      <label>a:
+        <input type="range" id="a" min="-5" max="5" step="0.1" value="1">
+      </label>
+
+      <label>b:
+        <input type="range" id="b" min="-5" max="5" step="0.1" value="0">
+      </label>
+
+      <label>c:
+        <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
+      </label>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
