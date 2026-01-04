@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>กราฟฟังก์ชัน Quadratic</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องมือวาดกราฟ - MathGraph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MathGraph</a>
+            <button class="btn btn-outline-secondary btn-sm" onclick="location.href='index.html'">ย้อนกลับ</button>
+        </div>
+    </nav>
 
-    <div class="back" href="index.html" onclick="location.href='index.html'">
-      <p>ย้อนกลับ</p>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="canvas-card">
+                    <canvas id="graph" width="550" height="550"></canvas>
+                    <div class="zoom-overlay">
+                        <button id="zoomIn" class="btn-zoom">+</button>
+                        <button id="zoomOut" class="btn-zoom">−</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="control-panel">
+                    <h4 class="fw-bold mb-4">ปรับค่าสัมประสิทธิ์</h4>
+                    <div class="equation-display">
+                        y = <span id="aVal">1</span>x² + <span id="bVal">0</span>x + <span id="cVal">0</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label d-flex justify-content-between">ค่า a <span>(ความชัน)</span></label>
+                        <input type="range" class="form-range" id="a" min="-5" max="5" step="0.1" value="1">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label d-flex justify-content-between">ค่า b <span>(ตำแหน่งแกน)</span></label>
+                        <input type="range" class="form-range" id="b" min="-5" max="5" step="0.1" value="0">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label d-flex justify-content-between">ค่า c <span>(จุดตัดแกน Y)</span></label>
+                        <input type="range" class="form-range" id="c" min="-5" max="5" step="0.1" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-  <h1>กราฟฟังก์ชัน y = ax² + bx + c</h1>
-  <p style="margin-top:-10px;">เลื่อนสไลด์เพื่อเปลี่ยนค่าสัมประสิทธิ์ หรือใช้ปุ่ม + / - เพื่อซูม</p>
-
-  <div id="container">
-
-    <div class="canvas-wrapper">
-      <canvas id="graph" width="500" height="500"></canvas>
-
-      <div class="zoom-btns">
-        <button id="zoomIn">+</button>
-        <button id="zoomOut">−</button>
-      </div>
-    </div>
-
-    <div class="panel">
-      <h2>ปรับค่าสัมประสิทธิ์</h2>
-
-      <p class="eq">
-        y =
-        <span id="aVal">1</span>x² +
-        <span id="bVal">0</span>x +
-        <span id="cVal">0</span>
-      </p>
-
-      <label>a:
-        <input type="range" id="a" min="-5" max="5" step="0.1" value="1">
-      </label>
-
-      <label>b:
-        <input type="range" id="b" min="-5" max="5" step="0.1" value="0">
-      </label>
-
-      <label>c:
-        <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
-      </label>
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
