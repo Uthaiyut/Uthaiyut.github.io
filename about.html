@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผู้จัดทำ - MathGraph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .about-card {
+            transition: transform 0.3s ease;
+            border: none;
+        }
+        .about-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MathGraph</a>
+            <div class="ms-auto">
+                <a href="index.html" class="btn btn-outline-primary btn-sm rounded-pill">กลับหน้าหลัก</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">ผู้จัดทำ</h1>
+            <p class="text-muted">โครงงานคณิตศาสตร์ เรื่อง การพัฒนาเว็บแอปพลิเคชันเพื่อส่งเสริมความเข้าใจเรื่องฟังก์ชันและกราฟ
+                                 ผ่านการแสดงผลทางภาพและแบบจำลองเชิงโต้ตอบ
+            </p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+                <div class="card about-card h-100 shadow-sm text-center p-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://via.placeholder.com/150" class="profile-img" >
+                    </div>
+                    <h5 class="fw-bold">นายอุทัยยุทธ เพิ่มพูล</h5>
+                    <p class="text-primary mb-1">เลขที่ 7</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card about-card h-100 shadow-sm text-center p-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://via.placeholder.com/150" class="profile-img" >
+                    </div>
+                    <h5 class="fw-bold">นายวีรวัฒน์ คำเที่ยง</h5>
+                    <p class="text-primary mb-1">เลขที่ 11</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card about-card h-100 shadow-sm text-center p-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://via.placeholder.com/150" class="profile-img" >
+                    </div>
+                    <h5 class="fw-bold">นายภาณุวัฒน์ ไพรวัน</h5>
+                    <p class="text-primary mb-1">เลขที่ 8</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 p-4 bg-white rounded-4 shadow-sm text-center border">
+            <h5 class="fw-bold mb-3">ครูที่ปรึกษาโครงงาน</h5>
+            <p class="mb-0 text-muted">คุณครูณัชชา กัลปิยะภัณฑ์</p>
+            <hr class="my-4 mx-auto" style="width: 50px;">
+            <p class="small text-secondary">โรงเรียนไทรโยคมณีกาญจน์วิทยา <br> ปีการศึกษา 2568</p>
+        </div>
+    </div>
+
+</body>
+</html>
